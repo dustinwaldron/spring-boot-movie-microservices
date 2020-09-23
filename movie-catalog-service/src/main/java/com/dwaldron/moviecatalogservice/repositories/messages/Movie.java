@@ -1,27 +1,39 @@
 package com.dwaldron.moviecatalogservice.repositories.messages;
 
 public class Movie {
-    private int movieId;
-    private String name;
+    private Integer id;
+    private String title;
+    private String description;
 
-    public Movie(int movieId, String name) {
-        this.movieId = movieId;
-        this.name = name;
+    public Movie() { }
+
+    public Movie(Integer id, String title, String description) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
     }
 
-    public int getMovieId() {
-        return movieId;
+    public Integer getId() {
+        return id;
     }
 
-    public void setMovieId(int movieId) {
-        this.movieId = movieId;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

@@ -2,27 +2,29 @@ package com.dwaldron.moviecatalogservice.repositories.messages;
 
 public class Rating {
 
-    private int movieId;
-    private int rating;
+    private Integer movieId;
+    private Integer rating;
 
-    public Rating(int movieId, int rating) {
+    public Rating() { }
+
+    public Rating(Integer movieId, Integer rating) {
         this.movieId = movieId;
         this.rating = rating;
     }
 
-    public int getMovieId() {
+    public Integer getMovieId() {
         return movieId;
     }
 
-    public void setMovieId(int movieId) {
+    public void setMovieId(Integer movieId) {
         this.movieId = movieId;
     }
 
-    public int getRating() {
+    public Integer getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(Integer rating) {
         this.rating = rating;
     }
 }
